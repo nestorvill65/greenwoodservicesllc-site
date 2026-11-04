@@ -1,0 +1,74 @@
+﻿---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout 
+  title="Contact Us & Free Estimate | Greenwood Cleaning Services LLC" 
+  description="Request a free cleaning estimate from Greenwood Cleaning Services LLC. Serving Columbia, Ellicott City, and Howard County MD."
+>
+  <main>
+    <section class="page-header" style="background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('/kitchen-bg.png') center/cover; padding: 80px 20px; text-align: center; color: white;">
+      <div class="container">
+        <h1 style="font-size: 2.5rem; font-weight: 800; text-transform: uppercase;">Get Your Free Estimate</h1>
+        <p style="font-size: 1.1rem; max-width: 650px; margin: 15px auto 0;">Reach out today for transparent pricing and tailored cleaning plans.</p>
+      </div>
+    </section>
+
+    <section style="padding: 70px 20px;">
+      <div class="container" style="max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
+        <!-- Contact Details -->
+        <div style="background: #f8fafc; padding: 35px; border-radius: 12px; border: 1px solid #e2e8f0;">
+          <h2 style="font-size: 1.5rem; font-weight: 800; color: #1b6b35; margin-bottom: 20px;">Contact Information</h2>
+          <div style="display: flex; flex-direction: column; gap: 15px; color: #333; font-size: 0.95rem;">
+            <p><i class="fas fa-phone-alt" style="color: #1b6b35; margin-right: 10px;"></i> <a href="tel:+12404833381" style="font-weight: bold; color: inherit;">(240) 483-3381</a></p>
+            <p><i class="fas fa-envelope" style="color: #1b6b35; margin-right: 10px;"></i> <a href="mailto:info@greenwoodservices.net" style="color: inherit;">info@greenwoodservices.net</a></p>
+            <p><i class="fas fa-map-marker-alt" style="color: #1b6b35; margin-right: 10px;"></i> Columbia & Howard County, MD</p>
+            <p><i class="fas fa-clock" style="color: #1b6b35; margin-right: 10px;"></i> Mon - Sat: 8:00 AM - 6:00 PM</p>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div style="background: white; padding: 35px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); border: 1px solid #e2e8f0;">
+          <h2 style="font-size: 1.5rem; font-weight: 800; color: #222; margin-bottom: 20px;">Request a Quote</h2>
+          <form action="https://api.web3forms.com/submit" method="POST" style="display: flex; flex-direction: column; gap: 15px;">
+            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+            <input type="hidden" name="subject" value="New Cleaning Quote - Greenwood Services LLC" />
+
+            <div>
+              <label style="display: block; font-weight: 700; font-size: 0.8rem; text-transform: uppercase; margin-bottom: 5px;">Your Name *</label>
+              <input type="text" name="name" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box;" />
+            </div>
+
+            <div>
+              <label style="display: block; font-weight: 700; font-size: 0.8rem; text-transform: uppercase; margin-bottom: 5px;">Phone Number *</label>
+              <input type="tel" name="phone" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box;" />
+            </div>
+
+            <div>
+              <label style="display: block; font-weight: 700; font-size: 0.8rem; text-transform: uppercase; margin-bottom: 5px;">Email *</label>
+              <input type="email" name="email" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box;" />
+            </div>
+
+            <div>
+              <label style="display: block; font-weight: 700; font-size: 0.8rem; text-transform: uppercase; margin-bottom: 5px;">Service Needed</label>
+              <select name="service" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box; background: white;">
+                <option>Residential Recurring Cleaning</option>
+                <option>Deep House Cleaning</option>
+                <option>Move-In / Move-Out Cleaning</option>
+              </select>
+            </div>
+
+            <div>
+              <label style="display: block; font-weight: 700; font-size: 0.8rem; text-transform: uppercase; margin-bottom: 5px;">Project Details</label>
+              <textarea name="message" rows="3" placeholder="Number of bedrooms, bathrooms, town..." style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box;"></textarea>
+            </div>
+
+            <button type="submit" class="btn-cta" style="border: none; cursor: pointer; text-align: center; padding: 12px; margin-top: 10px;">
+              Submit Request
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>

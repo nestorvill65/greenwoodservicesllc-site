@@ -1,0 +1,57 @@
+﻿---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout 
+  title="Cleaning Services | Greenwood Cleaning Services LLC" 
+  description="Professional residential cleaning, deep house cleaning, and move-in/out services in Columbia, Ellicott City, and Howard County MD."
+>
+  <main>
+    <section class="page-header" style="background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('/kitchen-bg.png') center/cover; padding: 80px 20px; text-align: center; color: white;">
+      <div class="container">
+        <h1 style="font-size: 2.5rem; font-weight: 800; text-transform: uppercase;">Our Cleaning Services</h1>
+        <p style="font-size: 1.1rem; max-width: 650px; margin: 15px auto 0;">Tailored residential and recurring maid care designed around your lifestyle in Howard County, MD.</p>
+      </div>
+    </section>
+
+    <section style="padding: 70px 20px;">
+      <div class="container" style="max-width: 1100px; margin: 0 auto; display: flex; flex-direction: column; gap: 60px;">
+        <!-- Service 1 -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; align-items: center;">
+          <img src="/service1_new.png" alt="Residential House Cleaning" style="width: 100%; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.1);" />
+          <div>
+            <h2 style="font-size: 1.8rem; font-weight: 800; color: #1b6b35; margin-bottom: 15px;">Recurring Residential Cleaning</h2>
+            <p style="line-height: 1.7; color: #444; margin-bottom: 20px;">
+              Keep your home consistently spotless with weekly, bi-weekly, or monthly visits. Our thorough routine covers surface dusting, vacuuming, mopping, kitchen sanitation, and detailed bathroom sanitizing.
+            </p>
+            <a href="/contact" class="btn-cta" style="display: inline-block;">Schedule Service &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; align-items: center;">
+          <div style="order: 2;">
+            <h2 style="font-size: 1.8rem; font-weight: 800; color: #1b6b35; margin-bottom: 15px;">Move-In & Move-Out Deep Clean</h2>
+            <p style="line-height: 1.7; color: #444; margin-bottom: 20px;">
+              Ensure landlords approve 100% deposit returns or prepare your new residence for pristine living. We sanitize inside kitchen cabinets, drawers, baseboards, appliances, closets, and door frames.
+            </p>
+            <a href="/contact" class="btn-cta" style="display: inline-block;">Get Move-Out Estimate &rarr;</a>
+          </div>
+          <img src="/service2_new.png" alt="Move In Move Out Cleaning" style="width: 100%; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); order: 1;" />
+        </div>
+
+        <!-- Service 3 -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; align-items: center;">
+          <img src="/service3.png" alt="Deep House Cleaning" style="width: 100%; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.1);" />
+          <div>
+            <h2 style="font-size: 1.8rem; font-weight: 800; color: #1b6b35; margin-bottom: 15px;">Intensive Deep House Cleaning</h2>
+            <p style="line-height: 1.7; color: #444; margin-bottom: 20px;">
+              An exhaustive top-to-bottom reset for homes requiring special attention before gatherings, after seasonal transitions, or as a kickoff before starting recurring visits.
+            </p>
+            <a href="/contact" class="btn-cta" style="display: inline-block;">Book Deep Clean &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>

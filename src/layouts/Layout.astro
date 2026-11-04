@@ -1,0 +1,168 @@
+﻿---
+import '../styles/global.css';
+import '../styles/style.css';
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, "https://greenwoodservicesllc.com");
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preload" as="image" href="/kitchen-bg.png" />
+  
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <meta name="keywords" content="house cleaning Columbia MD, maid service Howard County, deep cleaning Ellicott City, residential cleaning MD, move out cleaning Clarksville" />
+  <meta name="author" content="Greenwood Cleaning Services LLC" />
+  <link rel="canonical" href={canonicalURL} />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Greenwood Cleaning Services LLC | Columbia & Howard County MD" />
+  <meta property="og:description" content="Professional residential, deep, and move-in/out cleaning services in Howard County, MD. Get your free estimate today." />
+  <meta property="og:image" content="/logo.png" />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+  <!-- Schema Local Business -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Greenwood Cleaning Services LLC",
+    "image": "https://greenwoodservicesllc.com/logo.png",
+    "telephone": "+1-240-483-3381",
+    "email": "info@greenwoodservices.net",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Columbia",
+      "addressRegion": "MD",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.2037,
+      "longitude": -76.8610
+    },
+    "areaServed": [
+      { "@type": "City", "name": "Columbia" },
+      { "@type": "City", "name": "Ellicott City" },
+      { "@type": "City", "name": "Clarksville" },
+      { "@type": "City", "name": "Fulton" },
+      { "@type": "City", "name": "Highland" },
+      { "@type": "City", "name": "North Laurel" },
+      { "@type": "City", "name": "Elkridge" },
+      { "@type": "AdministrativeArea", "name": "Howard County" }
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Cleaning Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Residential House Cleaning"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Deep House Cleaning"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Move-In and Move-Out Cleaning"
+          }
+        }
+      ]
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "08:00",
+      "closes": "18:00"
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- Fixed Header Wrapper -->
+  <div class="fixed-header-wrapper">
+    <div class="top-bar">
+      <div class="container top-bar-content">
+        <a href="tel:+12404833381" class="topbar-link"><i class="fas fa-phone-alt"></i> (240) 483-3381</a>
+        <a href="mailto:info@greenwoodservices.net" class="topbar-link"><i class="fas fa-envelope"></i> info@greenwoodservices.net</a>
+      </div>
+    </div>
+
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <a href="/" aria-label="Greenwood Cleaning Home">
+            <img src="/logo.png" alt="Greenwood Cleaning Services LLC - House Cleaning Columbia MD" class="logo-img" width="600" height="327" />
+          </a>
+          <ul class="nav-menu">
+            <li><a href="/" class="nav-link active">Home</a></li>
+            <li><a href="/services" class="nav-link">Services</a></li>
+            <li><a href="/about" class="nav-link">About Us</a></li>
+            <li><a href="/contact" class="nav-link">Contact</a></li>
+            <li><a href="/contact" class="btn-cta">Get a Quote</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </div>
+
+  <slot />
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="/logo.png" alt="Greenwood Cleaning Services LLC Logo" class="footer-logo" width="600" height="327" />
+          <p style="font-weight: 600; color: #222222;">Your trusted, locally owned cleaning partner in Maryland. Licensed & Insured.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <ul>
+            <li><i class="fas fa-phone-alt"></i> <a href="tel:+12404833381">(240) 483-3381</a></li>
+            <li><i class="fas fa-envelope"></i> <a href="mailto:info@greenwoodservices.net">info@greenwoodservices.net</a></li>
+            <li><i class="fas fa-map-marker-alt"></i> Howard County, MD</li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2026 Greenwood Cleaning Services LLC. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
