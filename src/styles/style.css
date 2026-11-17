@@ -1085,3 +1085,6 @@ footer {
 
 
 
+
+.page-header { min-height: 480px !important; display: flex; align-items: center; justify-content: center; background-position: center 32% !important; }
+
