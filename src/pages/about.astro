@@ -3,36 +3,134 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout 
-  title="About Us | Greenwood Cleaning Services LLC" 
-  description="Learn about Greenwood Cleaning Services LLC: family-owned, licensed, insured cleaning company serving Howard County, Maryland."
+  title="About Us | Trusted Local Maid Service Columbia MD | Greenwood Cleaning LLC" 
+  description="Learn about Greenwood Cleaning Services LLC. Locally owned, licensed, and insured house cleaning professionals serving Columbia, Ellicott City, Clarksville, and Howard County, MD."
 >
+  <script type="application/ld+json" is:inline>
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "mainEntity": {
+      "@type": "HouseCleaningService",
+      "name": "Greenwood Cleaning Services LLC",
+      "image": "https://www.greenwoodservicesllc.com/logo.png",
+      "telephone": "+1-240-483-3381",
+      "email": "info@greenwoodservices.net",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Columbia",
+        "addressRegion": "MD",
+        "postalCode": "21044",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 39.2037,
+        "longitude": -76.8610
+      },
+      "areaServed": [
+        "Columbia",
+        "Ellicott City",
+        "Clarksville",
+        "Fulton",
+        "Highland",
+        "Howard County"
+      ],
+      "knowsAbout": [
+        "Residential House Cleaning",
+        "Deep Home Sanitization",
+        "Move-In Move-Out Turnovers",
+        "Eco-Friendly Cleaning Practices"
+      ]
+    }
+  }
+  </script>
+
   <main>
-    <section class="page-header" style="background: linear-gradient(rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)), url('/kitchen-bg.png') center 32% / cover; min-height: 480px; padding: 120px 20px; text-align: center; color: white;">
-      <div class="container">
-        <h1 style="font-size: 2.5rem; font-weight: 800; text-transform: uppercase;">About Greenwood Cleaning</h1>
-        <p style="font-size: 1.1rem; max-width: 650px; margin: 15px auto 0;">Your reliable, local cleaning partner in Howard County, MD.</p>
+    <section class="hero">
+      <div class="container hero-text">
+        <h1>More Than Just a Cleaning Company</h1>
+        <p>We are your trusted Howard County neighbors, dedicated to giving you back your free time with dependable, meticulous home care.</p>
       </div>
     </section>
 
-    <section style="padding: 70px 20px;">
-      <div class="container" style="max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 50px; align-items: center;">
-        <div>
-          <h2 style="font-size: 2rem; font-weight: 800; color: #1b6b35; margin-bottom: 20px;">Trusted Maid Care Rooted in Columbia, MD</h2>
-          <p style="line-height: 1.8; color: #444; margin-bottom: 15px;">
-            Greenwood Cleaning Services LLC was established to deliver unmatched thoroughness, punctuality, and trust to Maryland families and busy professionals.
-          </p>
-          <p style="line-height: 1.8; color: #444; margin-bottom: 20px;">
-            We operate fully licensed and insured, using safe, effective supplies and detail-driven checklists so you always come home to a truly refreshed environment.
-          </p>
-          <a href="/contact" class="btn-cta" style="display: inline-block;">Get in Touch &rarr;</a>
+    <!-- Company Story Section -->
+    <section>
+      <div class="container">
+        <div class="service-detail">
+          <div class="service-text">
+            <div class="section-header" style="text-align: left; margin-bottom: 25px;">
+              <h2>Locally Owned & Dedicated to Howard County</h2>
+            </div>
+            
+            <p><span class="brand-highlight">Greenwood Cleaning Services LLC</span> was founded with a clear, unwavering purpose: to provide reliable, top-tier residential cleaning services that families in Columbia, Ellicott City, and surrounding communities can invite into their homes with absolute confidence.</p>
+            <p>Unlike distant franchises or automated booking apps, we treat every residence with personal accountability. We recognize that inviting cleaners across your threshold requires profound trust. That is why our team is strictly vetted, professionally trained, and backed by comprehensive Maryland liability insurance.</p>
+            <p>From historic estates in <strong>Ellicott City</strong> to vibrant communities across <strong>Columbia</strong> (River Hill, Kings Contrivance, Wilde Lake) and suburban neighborhoods in <strong>Clarksville</strong>, we take genuine pride in enhancing our community's standard of living &mdash; one sparkling home at a time.</p>
+            <div style="margin-top: 25px;">
+              <a href="/contact" class="btn-service-cta">Work With Our Team</a>
+            </div>
+          </div>
+          
+          <div class="service-image" role="img" aria-label="Greenwood Cleaning team member providing professional maid service in Columbia MD" style="background-image: url('/team.png');"></div>
         </div>
-        <div>
-          <img src="/team.png" alt="Greenwood Cleaning Team" style="width: 100%; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.1);" />
+      </div>
+    </section>
+
+    <!-- Social Proof & Google Reviews Banner -->
+    <section class="bg-light" style="text-align: center; border-top: 1px solid #e2f0e6; border-bottom: 1px solid #e2f0e6; padding: 60px 0;">
+      <div class="container">
+        <h2 style="color: var(--primary-green); font-size: 2rem; margin-bottom: 12px;">See What Our Maryland Neighbors Say</h2>
+        
+        <div style="color: #f59e0b; font-size: 1.8rem; margin-bottom: 18px;">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+
+        <p style="max-width: 650px; margin: 0 auto 30px; font-size: 1.05rem; color: #4b5563; line-height: 1.6;">
+          We work diligently every single day to maintain our 5-star reputation across Howard County. Read verified feedback from local homeowners or share your experience.
+        </p>
+
+        <a href="https://www.google.com/search?q=Greenwood+Cleaning+Services+LLC+Columbia+MD+Reviews" target="_blank" rel="noopener noreferrer" class="btn-hero" style="display: inline-block; font-size: 0.95rem;">
+          <i class="fab fa-google" style="margin-right: 8px;"></i> Read Verified Google Reviews
+        </a>
+      </div>
+    </section>
+
+    <!-- Core Values Section -->
+    <section class="values-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Guiding Core Values</h2>
+          <p>The foundational principles that guide every sweep, scrub, and customer interaction.</p>
+        </div>
+        <div class="grid-3 values-grid">
+          <div class="card">
+            <div class="icon-box"><i class="fas fa-hand-holding-heart"></i></div>
+            <h3>Integrity & Transparency</h3>
+            <p>Honest quotes, upfront pricing with zero hidden fees, and transparent communication from the moment you request an estimate.</p>
+          </div>
+          <div class="card">
+            <div class="icon-box"><i class="fas fa-shield-alt"></i></div>
+            <h3>Safety & Protection</h3>
+            <p>Fully registered LLC carrying comprehensive Maryland liability insurance. We use safe, family-conscious and pet-friendly products.</p>
+          </div>
+          <div class="card">
+            <div class="icon-box"><i class="fas fa-gem"></i></div>
+            <h3>Meticulous Excellence</h3>
+            <p>We do not cut corners &mdash; we clean them. Our team follows rigorous, systematic checklists to guarantee consistent 5-star quality.</p>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+          <p style="color: #6b7280; font-size: 0.92rem; line-height: 1.6;">
+            Proudly serving Central Maryland households throughout <strong>Columbia</strong>, <strong>Ellicott City</strong>, <strong>Clarksville</strong>, <strong>Fulton</strong>, <strong>Highland</strong>, and <strong>Howard County</strong>. Looking for trusted house cleaners near you? <a href="/contact" style="color: var(--primary-green); font-weight: 700; text-decoration: underline;">Request your free quote today</a>.
+          </p>
         </div>
       </div>
     </section>
   </main>
 </Layout>
-
-
-

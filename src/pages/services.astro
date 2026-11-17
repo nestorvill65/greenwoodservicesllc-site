@@ -3,58 +3,183 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout 
-  title="Cleaning Services | Greenwood Cleaning Services LLC" 
-  description="Professional residential cleaning, deep house cleaning, and move-in/out services in Columbia, Ellicott City, and Howard County MD."
+  title="House Cleaning & Maid Services in Columbia & Howard County MD | Greenwood Cleaning LLC" 
+  description="Professional residential cleaning, deep cleaning, and move-in/move-out maid services across Columbia (21044, 21045), Ellicott City (21042), and Clarksville MD. Licensed & insured."
 >
+  <script type="application/ld+json" is:inline>
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "HouseCleaningService",
+        "@id": "https://www.greenwoodservicesllc.com/#business",
+        "name": "Greenwood Cleaning Services LLC",
+        "image": "https://www.greenwoodservicesllc.com/logo.png",
+        "telephone": "+1-240-483-3381",
+        "email": "info@greenwoodservices.net",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Columbia",
+          "addressRegion": "MD",
+          "postalCode": "21044",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 39.2037,
+          "longitude": -76.8610
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Columbia", "sameAs": "https://en.wikipedia.org/wiki/Columbia,_Maryland" },
+          { "@type": "City", "name": "Ellicott City", "sameAs": "https://en.wikipedia.org/wiki/Ellicott_City,_Maryland" },
+          { "@type": "City", "name": "Clarksville" },
+          { "@type": "City", "name": "Fulton" },
+          { "@type": "City", "name": "Highland" },
+          { "@type": "City", "name": "Elkridge" },
+          { "@type": "AdministrativeArea", "name": "Howard County" }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Are Greenwood Cleaning Services licensed and insured in Maryland?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, Greenwood Cleaning Services LLC is fully registered, licensed, and insured in the state of Maryland, giving homeowners complete protection and peace of mind."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you bring your own cleaning supplies and equipment?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, we arrive fully equipped with professional-grade vacuums, microfiber materials, and eco-friendly cleaning solutions tailored to your home."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What areas in Howard County do you service?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We serve all villages in Columbia (21044, 21045, 21046), Ellicott City (21042, 21043), Clarksville (21029), Fulton, Highland, Elkridge, and neighboring Maryland corridors."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
   <main>
-    <section class="page-header" style="background: linear-gradient(rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)), url('/kitchen-bg.png') center 32% / cover; min-height: 480px; padding: 120px 20px; text-align: center; color: white;">
-      <div class="container">
-        <h1 style="font-size: 2.5rem; font-weight: 800; text-transform: uppercase;">Our Cleaning Services</h1>
-        <p style="font-size: 1.1rem; max-width: 650px; margin: 15px auto 0;">Tailored residential and recurring maid care designed around your lifestyle in Howard County, MD.</p>
+    <section class="hero">
+      <div class="container hero-text">
+        <h1>Top-Rated House Cleaning & Maid Services in Howard County MD</h1>
+        <p>Reliable maid solutions and custom cleaning checklists tailored for homes in Columbia, Ellicott City, Clarksville, and surrounding Maryland areas.</p>
       </div>
     </section>
 
-    <section style="padding: 70px 20px;">
-      <div class="container" style="max-width: 1100px; margin: 0 auto; display: flex; flex-direction: column; gap: 60px;">
-        <!-- Service 1 -->
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; align-items: center;">
-          <img src="/service1_new.png" alt="Residential House Cleaning" style="width: 100%; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.1);" />
-          <div>
-            <h2 style="font-size: 1.8rem; font-weight: 800; color: #1b6b35; margin-bottom: 15px;">Recurring Residential Cleaning</h2>
-            <p style="line-height: 1.7; color: #444; margin-bottom: 20px;">
-              Keep your home consistently spotless with weekly, bi-weekly, or monthly visits. Our thorough routine covers surface dusting, vacuuming, mopping, kitchen sanitation, and detailed bathroom sanitizing.
-            </p>
-            <a href="/contact" class="btn-cta" style="display: inline-block;">Schedule Service &rarr;</a>
+    <section>
+      <div class="container">
+        
+        <!-- Service 1: Recurring -->
+        <div class="service-detail">
+          <div class="service-text">
+            <div class="service-title-wrap">
+              <i class="fas fa-home"></i>
+              <h2>Recurring Residential Maid Service</h2>
+            </div>
+            <p>Maintaining a spotless living space requires continuous care that busy schedules take away. Whether you live in a modern townhouse in <strong>Columbia</strong> (Villages of Wilde Lake, Kings Contrivance, River Hill) or manage a family home in <strong>Ellicott City</strong>, <span class="brand-highlight">Greenwood Cleaning Services LLC</span> provides dependable recurring cleaning plans (weekly, bi-weekly, or monthly).</p>
+            <p>We arrive equipped with commercial vacuums and eco-safe supplies, preserving indoor air quality and consistent sanitation across Howard County homes.</p>
+            <ul class="service-list">
+              <li><i class="fas fa-check-circle"></i> High-and-low surface dusting, ceiling fan blades, and picture frames</li>
+              <li><i class="fas fa-check-circle"></i> HEPA-filter vacuuming of carpets and damp-mopping hardwood/tile floors</li>
+              <li><i class="fas fa-check-circle"></i> Complete sanitation of bathroom fixtures, vanity mirrors, and shower stalls</li>
+              <li><i class="fas fa-check-circle"></i> Kitchen sanitization: countertops, backsplash, range exterior, and sink basin</li>
+            </ul>
+            <a href="/contact" class="btn-service-cta">Schedule Recurring Service</a>
           </div>
+          <div class="service-image" role="img" aria-label="Residential living room and kitchen cleaning in Columbia MD" style="background-image: url('/service1_new.png');"></div>
         </div>
 
-        <!-- Service 2 -->
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; align-items: center;">
-          <div style="order: 2;">
-            <h2 style="font-size: 1.8rem; font-weight: 800; color: #1b6b35; margin-bottom: 15px;">Move-In & Move-Out Deep Clean</h2>
-            <p style="line-height: 1.7; color: #444; margin-bottom: 20px;">
-              Ensure landlords approve 100% deposit returns or prepare your new residence for pristine living. We sanitize inside kitchen cabinets, drawers, baseboards, appliances, closets, and door frames.
-            </p>
-            <a href="/contact" class="btn-cta" style="display: inline-block;">Get Move-Out Estimate &rarr;</a>
+        <hr class="service-divider" />
+
+        <!-- Service 2: Deep Cleaning (Reversed Layout) -->
+        <div class="service-detail reverse-layout">
+          <div class="service-text">
+            <div class="service-title-wrap">
+              <i class="fas fa-broom"></i>
+              <h2>Deep Cleaning & Seasonal Refresh</h2>
+            </div>
+            <p>When regular upkeep is not enough, our intensive Deep Cleaning package restores your living space from top to bottom. Designed specifically for residences in <strong>Clarksville</strong>, <strong>Glenelg</strong>, and <strong>Highland</strong> undergoing spring revitalization, post-renovation dust removal, or first-time intensive sanitization.</p>
+            <p>We tackle neglected areas, eliminating built-up grease, mineral deposits, stubborn bathroom soap scum, and hidden allergen buildup.</p>
+            <ul class="service-list">
+              <li><i class="fas fa-check-circle"></i> Detail hand-washing of all baseboards, interior trim, and door frames</li>
+              <li><i class="fas fa-check-circle"></i> Deep scrubbing shower wall tile grout and glass door residue</li>
+              <li><i class="fas fa-check-circle"></i> Full interior & exterior microwave detailing and stove hood degreasing</li>
+              <li><i class="fas fa-check-circle"></i> Window sills, blinds wipe-down, and light switch plate sanitizing</li>
+            </ul>
+            <a href="/contact" class="btn-service-cta">Book a Deep Clean</a>
           </div>
-          <img src="/service2_new.png" alt="Move In Move Out Cleaning" style="width: 100%; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); order: 1;" />
+          <div class="service-image" role="img" aria-label="Deep cleaning bathroom sink and tile surfaces" style="background-image: url('/service2_new.png');"></div>
         </div>
 
-        <!-- Service 3 -->
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; align-items: center;">
-          <img src="/service3.png" alt="Deep House Cleaning" style="width: 100%; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.1);" />
-          <div>
-            <h2 style="font-size: 1.8rem; font-weight: 800; color: #1b6b35; margin-bottom: 15px;">Intensive Deep House Cleaning</h2>
-            <p style="line-height: 1.7; color: #444; margin-bottom: 20px;">
-              An exhaustive top-to-bottom reset for homes requiring special attention before gatherings, after seasonal transitions, or as a kickoff before starting recurring visits.
-            </p>
-            <a href="/contact" class="btn-cta" style="display: inline-block;">Book Deep Clean &rarr;</a>
+        <hr class="service-divider" />
+
+        <!-- Service 3: Move-In / Move-Out -->
+        <div class="service-detail">
+          <div class="service-text">
+            <div class="service-title-wrap">
+              <i class="fas fa-box-open"></i>
+              <h2>Move-In & Move-Out Cleaning Services</h2>
+            </div>
+            <p>Moving demands punctuality and strict cleanliness standards. Whether you are moving into a rental apartment in <strong>North Laurel</strong>, closing on a property in <strong>Savage</strong>, or managing tenant turnover in <strong>Jessup</strong>, our turnkey vacancy cleaning ensures a flawless inspection.</p>
+            <p>Our comprehensive move-out checklist meets the strict standards of Maryland property management companies and real estate agents, helping tenants secure their full security deposit return.</p>
+            <ul class="service-list">
+              <li><i class="fas fa-check-circle"></i> Interior & exterior scrub of kitchen cabinets, drawers, and shelving</li>
+              <li><i class="fas fa-check-circle"></i> Intensive oven interior degreasing and refrigerator deep clean</li>
+              <li><i class="fas fa-check-circle"></i> Deep vacuuming inside bedroom closets, laundry closets, and utility areas</li>
+              <li><i class="fas fa-check-circle"></i> Sanitization of interior doors, hardware, thresholds, and light switches</li>
+            </ul>
+            <a href="/contact" class="btn-service-cta">Request Move-Out Estimate</a>
+          </div>
+          <div class="service-image" role="img" aria-label="Move out vacancy house cleaning supplies" style="background-image: url('/service3.png');"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Local Cleaning FAQ Section -->
+    <section class="bg-light faq-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Frequently Asked Questions About Our Cleaning Services</h2>
+          <p>Everything you need to know about booking our professional maid team in Howard County, MD.</p>
+        </div>
+        <div class="grid-3">
+          <div class="card">
+            <h3>Are you licensed and insured?</h3>
+            <p>Yes. Greenwood Cleaning Services LLC is fully licensed and carries comprehensive liability insurance in Maryland to protect your home and possessions.</p>
+          </div>
+          <div class="card">
+            <h3>Do I need to supply cleaning tools?</h3>
+            <p>No. Our crew brings all professional-grade equipment, commercial HEPA vacuums, and eco-conscious supplies needed for a spotless finish.</p>
+          </div>
+          <div class="card">
+            <h3>What areas do you serve?</h3>
+            <p>We serve Columbia (21044, 21045, 21046), Ellicott City (21042, 21043), Clarksville (21029), Fulton, Laurel, Elkridge, and neighboring communities.</p>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section style="text-align: center; padding: 70px 0;">
+      <div class="container">
+        <h2>Ready for a Spotless Home?</h2>
+        <p style="margin-bottom: 30px; font-size: 1.05rem;">Get your customized, free estimate in minutes. Serving homeowners throughout Howard County.</p>
+        <a href="/contact" class="btn-hero">Get a Free Estimate</a>
       </div>
     </section>
   </main>
 </Layout>
-
-
-
