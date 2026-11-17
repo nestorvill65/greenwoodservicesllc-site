@@ -8,7 +8,8 @@ interface Props {
 }
 
 const { title, description } = Astro.props;
-const canonicalURL = new URL(Astro.url.pathname, "https://greenwoodservicesllc.com");
+const currentPath = Astro.url.pathname.replace(/\/$/, '') || '/';
+const canonicalURL = new URL(Astro.url.pathname, "https://www.greenwoodservicesllc.com");
 ---
 
 <!DOCTYPE html>
@@ -27,7 +28,7 @@ const canonicalURL = new URL(Astro.url.pathname, "https://greenwoodservicesllc.c
   <!-- Open Graph -->
   <meta property="og:title" content="Greenwood Cleaning Services LLC | Columbia & Howard County MD" />
   <meta property="og:description" content="Professional residential, deep, and move-in/out cleaning services in Howard County, MD. Get your free estimate today." />
-  <meta property="og:image" content="/logo.png" />
+  <meta property="og:image" content="https://www.greenwoodservicesllc.com/logo.png" />
   <meta property="og:type" content="website" />
 
   <!-- Fonts & Icons -->
@@ -42,7 +43,7 @@ const canonicalURL = new URL(Astro.url.pathname, "https://greenwoodservicesllc.c
     "@context": "https://schema.org",
     "@type": "HomeAndConstructionBusiness",
     "name": "Greenwood Cleaning Services LLC",
-    "image": "https://greenwoodservicesllc.com/logo.png",
+    "image": "https://www.greenwoodservicesllc.com/logo.png",
     "telephone": "+1-240-483-3381",
     "email": "info@greenwoodservices.net",
     "priceRange": "$$",
@@ -120,10 +121,10 @@ const canonicalURL = new URL(Astro.url.pathname, "https://greenwoodservicesllc.c
             <img src="/logo.png" alt="Greenwood Cleaning Services LLC - House Cleaning Columbia MD" class="logo-img" width="600" height="327" />
           </a>
           <ul class="nav-menu">
-            <li><a href="/" class="nav-link active">Home</a></li>
-            <li><a href="/services" class="nav-link">Services</a></li>
-            <li><a href="/about" class="nav-link">About Us</a></li>
-            <li><a href="/contact" class="nav-link">Contact</a></li>
+            <li><a href="/" class:list={["nav-link", { active: currentPath === '/' }]}>Home</a></li>
+            <li><a href="/services" class:list={["nav-link", { active: currentPath === '/services' }]}>Services</a></li>
+            <li><a href="/about" class:list={["nav-link", { active: currentPath === '/about' }]}>About Us</a></li>
+            <li><a href="/contact" class:list={["nav-link", { active: currentPath === '/contact' }]}>Contact</a></li>
             <li><a href="/contact" class="btn-cta">Get a Quote</a></li>
           </ul>
         </nav>

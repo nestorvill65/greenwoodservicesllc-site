@@ -159,7 +159,7 @@ header {
 
 /* --- HERO SECTION --- */
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('kitchen-bg.png') no-repeat center center / cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('/kitchen-bg.png') no-repeat center center / cover;
   min-height: 85vh;
   display: flex;
   align-items: center;
@@ -194,6 +194,7 @@ header {
 
 /* BOTON HERO VERDE */
 .btn-hero {
+  border: none;
   background: var(--primary-green);
   color: var(--white) !important;
   padding: 18px 45px;
@@ -457,6 +458,7 @@ footer i {
   }
 
   .btn-hero {
+  border: none;
     width: 100%;
     padding: 14px 20px;
   }
@@ -1079,3 +1081,5 @@ footer {
     gap: 40px !important;
   }
 }
+
+

@@ -50,7 +50,7 @@ import Layout from '../layouts/Layout.astro';
   </script>
 
   <main>
-    <section class="hero" style="min-height: 280px; height: 36vh;">
+    <section class="hero" style="min-height: 280px; height: auto; padding: 70px 20px;">
       <div class="container hero-text">
         <h1>Request Your Free Cleaning Estimate</h1>
         <p>Ready for a spotless, sanitized home? Contact Howard County's trusted local cleaning specialists today.</p>
@@ -118,7 +118,7 @@ import Layout from '../layouts/Layout.astro';
             <p style="color: #4b5563; margin-bottom: 25px;">Complete this brief form to receive your personalized, no-obligation estimate.</p>
 
             <form action="https://formspree.io/f/mjygnpbv" method="POST">
-              <input type="hidden" name="_next" value="/success.html" />
+              <input type="hidden" name="_next" value="/success" />
               <input type="hidden" name="form-name" value="contact" />
 
               <!-- Anti-Spam Honeypot Field -->
@@ -194,7 +194,7 @@ import Layout from '../layouts/Layout.astro';
             }
           });
           if (response.ok) {
-            window.location.href = '/success.html';
+            window.location.href = '/success';
           } else {
             alert('Oops! There was a problem submitting your form. Please call us directly.');
             if (submitBtn) {
@@ -213,3 +213,5 @@ import Layout from '../layouts/Layout.astro';
     }
   </script>
 </Layout>
+
+
