@@ -3,72 +3,213 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout 
-  title="Contact Us & Free Estimate | Greenwood Cleaning Services LLC" 
-  description="Request a free cleaning estimate from Greenwood Cleaning Services LLC. Serving Columbia, Ellicott City, and Howard County MD."
+  title="Contact Greenwood Cleaning | Free Estimate Columbia & Howard County MD" 
+  description="Request a free, no-obligation house cleaning estimate in Columbia, Ellicott City, and Howard County, MD. Direct telephone (240) 483-3381 or instant online booking form."
 >
+  <script type="application/ld+json" is:inline>
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "mainEntity": {
+      "@type": "HouseCleaningService",
+      "name": "Greenwood Cleaning Services LLC",
+      "image": "/logo.png",
+      "telephone": "+1-240-483-3381",
+      "email": "info@greenwoodservices.net",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Columbia",
+        "addressRegion": "MD",
+        "postalCode": "21044",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 39.2037,
+        "longitude": -76.8610
+      },
+      "areaServed": [
+        "Columbia",
+        "Ellicott City",
+        "Clarksville",
+        "Fulton",
+        "Highland",
+        "North Laurel",
+        "Elkridge",
+        "Howard County"
+      ],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      }
+    }
+  }
+  </script>
+
   <main>
-    <section class="page-header" style="background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('/kitchen-bg.png') center/cover; padding: 80px 20px; text-align: center; color: white;">
-      <div class="container">
-        <h1 style="font-size: 2.5rem; font-weight: 800; text-transform: uppercase;">Get Your Free Estimate</h1>
-        <p style="font-size: 1.1rem; max-width: 650px; margin: 15px auto 0;">Reach out today for transparent pricing and tailored cleaning plans.</p>
+    <section class="hero" style="min-height: 280px; height: 36vh;">
+      <div class="container hero-text">
+        <h1>Request Your Free Cleaning Estimate</h1>
+        <p>Ready for a spotless, sanitized home? Contact Howard County's trusted local cleaning specialists today.</p>
       </div>
     </section>
 
-    <section style="padding: 70px 20px;">
-      <div class="container" style="max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
-        <!-- Contact Details -->
-        <div style="background: #f8fafc; padding: 35px; border-radius: 12px; border: 1px solid #e2e8f0;">
-          <h2 style="font-size: 1.5rem; font-weight: 800; color: #1b6b35; margin-bottom: 20px;">Contact Information</h2>
-          <div style="display: flex; flex-direction: column; gap: 15px; color: #333; font-size: 0.95rem;">
-            <p><i class="fas fa-phone-alt" style="color: #1b6b35; margin-right: 10px;"></i> <a href="tel:+12404833381" style="font-weight: bold; color: inherit;">(240) 483-3381</a></p>
-            <p><i class="fas fa-envelope" style="color: #1b6b35; margin-right: 10px;"></i> <a href="mailto:info@greenwoodservices.net" style="color: inherit;">info@greenwoodservices.net</a></p>
-            <p><i class="fas fa-map-marker-alt" style="color: #1b6b35; margin-right: 10px;"></i> Columbia & Howard County, MD</p>
-            <p><i class="fas fa-clock" style="color: #1b6b35; margin-right: 10px;"></i> Mon - Sat: 8:00 AM - 6:00 PM</p>
+    <section class="bg-light contact-section">
+      <div class="container">
+        <div class="contact-container">
+
+          <!-- Left Column: Direct Contact & Trust Information -->
+          <div class="contact-info-col">
+            <h2>Get in Touch Directly</h2>
+            <p style="color: #4b5563; line-height: 1.6;">
+              Have questions about recurring maid service, move-out checklists, or specialty deep cleans in Howard County? Reach our local office directly.
+            </p>
+
+            <div class="contact-info-card">
+              <div class="contact-method">
+                <div class="contact-method-icon">
+                  <i class="fas fa-phone-alt"></i>
+                </div>
+                <div class="contact-method-text">
+                  <h4>Call or Text Us</h4>
+                  <a href="tel:+12404833381">(240) 483-3381</a>
+                  <p style="font-size: 0.85rem; color: #6b7280; margin-top: 2px;">Monday &ndash; Saturday: 8:00 AM &ndash; 6:00 PM</p>
+                </div>
+              </div>
+
+              <div class="contact-method">
+                <div class="contact-method-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-method-text">
+                  <h4>Direct Email</h4>
+                  <a href="mailto:info@greenwoodservices.net">info@greenwoodservices.net</a>
+                  <p style="font-size: 0.85rem; color: #6b7280; margin-top: 2px;">Fast reply within 24 business hours</p>
+                </div>
+              </div>
+
+              <div class="contact-method">
+                <div class="contact-method-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-method-text">
+                  <h4>Primary Service Area</h4>
+                  <p>Columbia, Ellicott City, Clarksville & All Howard County, MD</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-badges">
+              <ul>
+                <li><i class="fas fa-check-circle"></i> Licensed & Insured Maryland LLC</li>
+                <li><i class="fas fa-check-circle"></i> Transparent Flat-Rate Pricing Available</li>
+                <li><i class="fas fa-check-circle"></i> Commercial-Grade Equipment & Eco Supplies</li>
+                <li><i class="fas fa-check-circle"></i> 100% Satisfaction Guarantee on Every Clean</li>
+              </ul>
+            </div>
           </div>
-        </div>
 
-        <!-- Form -->
-        <div style="background: white; padding: 35px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); border: 1px solid #e2e8f0;">
-          <h2 style="font-size: 1.5rem; font-weight: 800; color: #222; margin-bottom: 20px;">Request a Quote</h2>
-          <form action="https://api.web3forms.com/submit" method="POST" style="display: flex; flex-direction: column; gap: 15px;">
-            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
-            <input type="hidden" name="subject" value="New Cleaning Quote - Greenwood Services LLC" />
+          <!-- Right Column: Lead Capture Form -->
+          <div class="contact-form-col">
+            <h2>Send Us a Message</h2>
+            <p style="color: #4b5563; margin-bottom: 25px;">Complete this brief form to receive your personalized, no-obligation estimate.</p>
 
-            <div>
-              <label style="display: block; font-weight: 700; font-size: 0.8rem; text-transform: uppercase; margin-bottom: 5px;">Your Name *</label>
-              <input type="text" name="name" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box;" />
-            </div>
+            <form action="https://formspree.io/f/mjygnpbv" method="POST">
+              <input type="hidden" name="_next" value="/success.html" />
+              <input type="hidden" name="form-name" value="contact" />
 
-            <div>
-              <label style="display: block; font-weight: 700; font-size: 0.8rem; text-transform: uppercase; margin-bottom: 5px;">Phone Number *</label>
-              <input type="tel" name="phone" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box;" />
-            </div>
+              <!-- Anti-Spam Honeypot Field -->
+              <p style="display:none;">
+                <label>Do not fill this out: <input name="bot-field" /></label>
+              </p>
 
-            <div>
-              <label style="display: block; font-weight: 700; font-size: 0.8rem; text-transform: uppercase; margin-bottom: 5px;">Email *</label>
-              <input type="email" name="email" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box;" />
-            </div>
+              <div class="form-group">
+                <label for="contact-name">Full Name *</label>
+                <input type="text" id="contact-name" name="name" placeholder="e.g. John Smith" required />
+              </div>
 
-            <div>
-              <label style="display: block; font-weight: 700; font-size: 0.8rem; text-transform: uppercase; margin-bottom: 5px;">Service Needed</label>
-              <select name="service" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box; background: white;">
-                <option>Residential Recurring Cleaning</option>
-                <option>Deep House Cleaning</option>
-                <option>Move-In / Move-Out Cleaning</option>
-              </select>
-            </div>
+              <div class="form-group">
+                <label for="contact-phone">Phone Number *</label>
+                <input type="tel" id="contact-phone" name="phone" placeholder="(240) 000-0000" required />
+              </div>
 
-            <div>
-              <label style="display: block; font-weight: 700; font-size: 0.8rem; text-transform: uppercase; margin-bottom: 5px;">Project Details</label>
-              <textarea name="message" rows="3" placeholder="Number of bedrooms, bathrooms, town..." style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box;"></textarea>
-            </div>
+              <div class="form-group">
+                <label for="contact-email">Email Address *</label>
+                <input type="email" id="contact-email" name="email" placeholder="john@example.com" required />
+              </div>
 
-            <button type="submit" class="btn-cta" style="border: none; cursor: pointer; text-align: center; padding: 12px; margin-top: 10px;">
-              Submit Request
-            </button>
-          </form>
+              <div class="form-group">
+                <label for="contact-service">Service Requested *</label>
+                <select id="contact-service" name="service" required>
+                  <option value="Recurring Residential Cleaning">Recurring Residential Cleaning (Weekly / Bi-Weekly / Monthly)</option>
+                  <option value="Deep House Cleaning">Deep House Cleaning & Seasonal Scrub</option>
+                  <option value="Move-In / Move-Out Cleaning">Move-In / Move-Out Turnover Cleaning</option>
+                  <option value="Other Custom Cleaning">Other Specialty Cleaning</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-location">City & Zip Code in MD *</label>
+                <input type="text" id="contact-location" name="location" placeholder="e.g. Columbia MD 21044" required />
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message">Property Details & Specific Requests</label>
+                <textarea id="contact-message" name="message" placeholder="Number of bedrooms, bathrooms, approximate square footage, pets, or specific priorities..."></textarea>
+              </div>
+
+              <button type="submit" class="btn-hero" style="width: 100%; font-size: 1rem; cursor: pointer;">
+                Submit Estimate Request
+              </button>
+            </form>
+          </div>
+
         </div>
       </div>
     </section>
   </main>
+
+  <script is:inline>
+    const contactForm = document.querySelector('form[action*="formspree.io"]');
+    if (contactForm) {
+      contactForm.addEventListener('submit', async function (e) {
+        e.preventDefault();
+        const submitBtn = contactForm.querySelector('button[type="submit"]');
+        const originalBtnText = submitBtn ? submitBtn.innerText : 'Sending...';
+        if (submitBtn) {
+          submitBtn.disabled = true;
+          submitBtn.innerText = 'Sending...';
+        }
+
+        const data = new FormData(contactForm);
+        try {
+          const response = await fetch(contactForm.action, {
+            method: 'POST',
+            body: data,
+            headers: {
+              'Accept': 'application/json'
+            }
+          });
+          if (response.ok) {
+            window.location.href = '/success.html';
+          } else {
+            alert('Oops! There was a problem submitting your form. Please call us directly.');
+            if (submitBtn) {
+              submitBtn.disabled = false;
+              submitBtn.innerText = originalBtnText;
+            }
+          }
+        } catch (error) {
+          alert('Oops! There was a problem submitting your form. Please call us directly.');
+          if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.innerText = originalBtnText;
+          }
+        }
+      });
+    }
+  </script>
 </Layout>
