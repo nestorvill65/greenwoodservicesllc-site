@@ -17,7 +17,7 @@ const canonicalURL = new URL(Astro.url.pathname, "https://www.greenwoodservicesl
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preload" as="image" href="/kitchen-bg.png" />
+  <link rel="preload" as="image" href="/kitchen-bg.png" fetchpriority="high" />
   
   <title>{title}</title>
   <meta name="description" content={description} />
@@ -167,3 +167,4 @@ const canonicalURL = new URL(Astro.url.pathname, "https://www.greenwoodservicesl
   </footer>
 </body>
 </html>
+

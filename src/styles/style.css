@@ -5,9 +5,9 @@
 
 /* --- VARIABLES GLOBALES --- */
 :root {
-  --primary-green: #28a745;
-  --dark-green: #1e7e34;
-  --accent-orange: #F57F17;
+  --primary-green: #1e7e34;
+  --dark-green: #155724;
+  --accent-orange: #c65100;
   --dark-text: #333333;
   --light-bg: #f8f9fa;
   --white: #ffffff;
@@ -1087,4 +1087,5 @@ footer {
 
 
 .page-header { min-height: 480px !important; display: flex; align-items: center; justify-content: center; background-position: center 32% !important; }
+
 
